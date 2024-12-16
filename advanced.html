@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersec Pathway - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:  #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(41, 41, 51, 0.95);
+            padding: 1.7rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-family:merienda;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links a.active {
+            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 150px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #00ff88;
+            font-weight: 700;
+            margin-bottom: 20px;
+            position: relative;
+            font-style: italic;
+        }
+
+        .page-title::after {
+            content: "";
+            width: 80px;
+            height: 4px;
+            background-color: #00ff88;
+            display: block;
+            margin: 10px auto 30px auto;
+            border-radius: 4px;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color:#00ff88;
+            margin-bottom: 40px;
+        }
+
+        .path-section {
+            background-color:#333;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .path-section:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .path-section h3 {
+            font-size: 1.6rem;
+            color: #00ff88;
+            font-family:sriracha;
+
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .path-section p {
+            color:white;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-family:merienda;
+        }
+
+        .path-section ul {
+            padding-left: 20px;
+            font-size: 18px;
+            font-family:merienda;
+            margin-bottom: 15px;
+            color:white;
+        }
+
+        .path-section ul li {
+            margin-bottom: 10px;
+            color:white;
+        }
+
+        .key-info {
+            font-weight: 600;
+            color: #1f2937;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+
+        .average-salary {
+            margin-top: 15px;
+            color: #007bff;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: rgba(41, 41, 51, 0.95);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer p{
+        color:white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <img src="./img/shield.webp" alt="Cybersec Pathway Logo">
+                <h1>Cybersec Pathway</h1>
+            </a>
+            <div class="nav-links">
+                <a href="ind.html">Home</a>
+                <a href="blogpage.html">Blog</a>
+                <a href="service.html"class="active">Services</a>
+                <a href="about.html" >About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    
+    <section class="content-wrapper">
+        <div class="page-title">Advanced Path</div>
+        <!-- Career Path Sections -->
+        <div class="path-section">
+            <h3>1. Security Architect</h3>
+            <p>A Security Architect is responsible for designing secure systems that can resist potential cyber threats. This role involves high-level planning, as well as hands-on work in developing and maintaining secure networks and systems.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Designing and implementing security architectures for networks, applications, and cloud environments.</li>
+                    <li>Leading security initiatives for system development life cycles (SDLC).</li>
+                    <li>Ensuring that security controls align with business objectives and compliance requirements.</li>
+                </ul>
+                <li><strong>Skills Required:</strong></li>
+                <ul>
+                    <li>Expertise in network design, cryptography, and secure coding practices.</li>
+                    <li>Knowledge of cloud security (AWS, Azure) and hybrid cloud environments.</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>CISSP, TOGAF, SABSA.</p>
+                <p class="average-salary">Average Salary: $120,000 - $160,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>2. Cybersecurity Manager</h3>
+            <p>Cybersecurity Managers are responsible for leading a team of security professionals, overseeing security operations, and ensuring the organization meets all necessary security standards and regulatory requirements.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Managing cybersecurity projects, including deployment of security technologies and practices.</li>
+                    <li>Overseeing daily operations, threat monitoring, and incident response efforts.</li>
+                    <li>Coordinating with different departments to ensure security policies are followed.</li>
+                </ul>
+                <li><strong>Skills Required:</strong></li>
+                <ul>
+                    <li>Strong leadership, project management, and communication skills.</li>
+                    <li>In-depth knowledge of risk management and regulatory compliance (GDPR, HIPAA, PCI-DSS).</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>CISSP, CISM, PMP.</p>
+                <p class="average-salary">Average Salary: $110,000 - $150,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>3. Chief Information Security Officer (CISO)</h3>
+            <p>The CISO is the top executive responsible for a company’s overall cybersecurity strategy. They provide leadership in establishing security standards, managing cybersecurity risks, and ensuring compliance with regulatory requirements.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Developing and implementing enterprise-wide security strategies.</li>
+                    <li>Overseeing all security-related operations and ensuring the protection of sensitive data.</li>
+                    <li>Communicating cybersecurity risks and progress to the board of directors and executive leadership.</li>
+                </ul>
+                <li><strong>Skills Required:</strong></li>
+                <ul>
+                    <li>Strategic planning and leadership.</li>
+                    <li>Strong understanding of governance, risk management, and compliance (GRC).</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>CISSP, CISM, CRISC.</p>
+                <p class="average-salary">Average Salary: $150,000 - $250,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>4. Threat Hunter</h3>
+            <p>Threat Hunters proactively search for cyber threats that have bypassed traditional security defenses. They investigate anomalous behavior in systems to find evidence of malicious activity.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Engaging in proactive threat hunting activities.</li>
+                    <li>Using threat intelligence data to identify advanced persistent threats (APTs).</li>
+                    <li>Collaborating with incident response teams to contain and neutralize discovered threats.</li>
+                </ul>
+                <div class="key-info">Skills Required:</div>
+                <ul>
+                    <li>Knowledge of malware analysis, reverse engineering, and threat intelligence platforms.</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>GCTI, GCTH.</p>
+                <p class="average-salary">Average Salary: $100,000 - $140,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>5. Cloud Security Engineer</h3>
+            <p>As companies increasingly move to cloud infrastructure, Cloud Security Engineers play a crucial role in ensuring that cloud systems are secure and compliant with relevant laws.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Designing and implementing secure cloud infrastructure.</li>
+                    <li>Ensuring cloud platforms meet compliance requirements (e.g., GDPR, SOC 2).</li>
+                    <li>Managing identity and access management (IAM) in the cloud.</li>
+                </ul>
+                <div class="key-info">Skills Required:</div>
+                <ul>
+                    <li>Proficiency in AWS, Azure, or Google Cloud security tools.</li>
+                    <li>Expertise in cloud compliance frameworks and DevSecOps methodologies.</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>CCSP, AWS Certified Security.</p>
+                <p class="average-salary">Average Salary: $110,000 - $150,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>6. Cyber Forensics Analyst</h3>
+            <p>Cyber Forensics Analysts investigate cybercrimes by collecting and analyzing digital evidence. They work closely with law enforcement agencies to help prosecute cybercriminals.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Recovering deleted files, decrypting encrypted data, and analyzing digital devices for evidence.</li>
+                    <li>Working with law enforcement to build a chain of custody for digital evidence.</li>
+                </ul>
+                <div class="key-info">Skills Required:</div>
+                <ul>
+                    <li>Experience with forensic tools like EnCase or FTK (Forensic Toolkit).</li>
+                    <li>Understanding of cyber laws and regulations.</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>GCFE, EnCE.</p>
+                <p class="average-salary">Average Salary: $80,000 - $120,000 per year.</p>
+            </ul>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Cybersec Pathway. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

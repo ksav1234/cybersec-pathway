@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersec Pathway - About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color:  #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(41, 41, 51, 0.95);
+            padding: 1.7rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family:sriracha;
+
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-family:merienda;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links a.active {
+            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Main Content */
+        .content-wrapper {
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 150px;
+        }
+
+        .page-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color:#00ff88;
+            font-weight: 700;
+            font-family:sriracha;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .page-title::after {
+            content: "";
+            width: 80px;
+            height: 4px;
+            background-color:#00ff88;
+            display: block;
+            margin: 10px auto 30px auto;
+            border-radius: 4px;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .path-section {
+            background-color: #333;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .path-section:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .path-section h3 {
+            font-size: 1.6rem;
+            font-family:sriracha;
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .path-section p {
+            color: white;
+            line-height: 1.7;
+            font-size: 18px;
+            font-family:merienda;
+            margin-bottom: 20px;
+        }
+
+        .path-section ul {
+            padding-left: 20px;
+            margin-bottom: 15px;
+            font-size: 18px;
+            font-size: 1rem;
+        }
+
+        .path-section ul li {
+            margin-bottom: 10px;
+            color:white;
+            font-family:merienda;
+            font-size: 18px;
+        }
+
+        .key-info {
+            font-weight: 600;
+            color:white;
+            margin-top: 10px;
+            font-size: 1.5rem;
+        }
+
+        .average-salary {
+            margin-top: 15px;
+            color:#00ff88;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        /* Footer Styles */
+        footer {
+            background-color: rgba(41, 41, 51, 0.95);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: auto;
+        }
+        footer p{
+        color:white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <img src="./img/shield.webp" alt="Cybersec Pathway Logo">
+                <h1>Cybersec Pathway</h1>
+            </a>
+            <div class="nav-links">
+                <a href="ind.html">Home</a>
+                <a href="blogpage.html">Blog</a>
+                <a href="service.html"class="active">Services</a>
+                <a href="about.html" >About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="content-wrapper">
+        <div class="page-title">Beginner Path</div>
+
+        <!-- Career Path Sections -->
+        <div class="path-section">
+            <h3>1. Security Analyst</h3>
+            <p>A Security Analyst is often the first step for many aspiring cybersecurity professionals. The role focuses on identifying vulnerabilities in networks, monitoring security breaches, and implementing defensive strategies.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Monitoring security alerts and responding to incidents.</li>
+                    <li>Managing and maintaining firewalls, encryption, and SIEM tools.</li>
+                    <li>Updating security protocols and applying patches.</li>
+                </ul>
+                <li><strong>Skills Required:</strong></li>
+                <ul>
+                    <li>Knowledge of TCP/IP, firewalls, VPNs, IDS/IPS.</li>
+                    <li>Proficiency in tools like Wireshark, Nessus, or Metasploit.</li>
+                </ul>
+                <div class="key-info">Path to Success:</div>
+                <p>Certifications: CompTIA Security+, CEH, GSEC.</p>
+                <p>Education: Bachelor’s degree in IT or Cybersecurity.</p>
+                <p class="average-salary">Average Salary: $60,000 - $80,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>2. IT Security Administrator</h3>
+            <p>Responsible for the security of an organization's IT infrastructure, maintaining defenses and operational security daily.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Managing access control for systems, software, and hardware.</li>
+                    <li>Overseeing network configurations, firewall protection, and VPN setups.</li>
+                </ul>
+                <li><strong>Skills Required:</strong></li>
+                <ul>
+                    <li>Strong knowledge of Windows, Linux, or Unix environments.</li>
+                    <li>Proficiency in network security protocols and tools like Palo Alto or Cisco ASA.</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>CompTIA Network+, CISSP Associate, Microsoft Certified: Security, Compliance, and Identity Fundamentals.</p>
+                <p class="average-salary">Average Salary: $70,000 - $85,000 per year.</p>
+            </ul>
+        </div>
+
+        <div class="path-section">
+            <h3>3. Incident Responder</h3>
+            <p>Incident Responders mitigate damage from security breaches and prevent future incidents through analysis and response planning.</p>
+            <ul>
+                <li><strong>Key Responsibilities:</strong></li>
+                <ul>
+                    <li>Investigating, managing, and responding to security breaches.</li>
+                    <li>Performing root cause analysis and developing recovery plans.</li>
+                </ul>
+                <li><strong>Skills Required:</strong></li>
+                <ul>
+                    <li>Log analysis, malware analysis, and incident response tools.</li>
+                    <li>Knowledge of digital forensics techniques.</li>
+                </ul>
+                <div class="key-info">Certifications:</div>
+                <p>GCIH, ECIH.</p>
+                <p class="average-salary">Average Salary: $75,000 - $95,000 per year.</p>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Cybersec Pathway. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

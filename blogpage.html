@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersec Pathway</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #121212;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: rgba(41, 41, 51, 0.95);
+            padding: 1.7rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .logo img {
+            width: 35px;
+            height: 35px;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            font-family: sriracha;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-family:merienda;
+            padding: 5px 10px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .nav-links a.active {
+            color: #007bff;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .dark-mode-toggle {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dark-mode-toggle img {
+            width: 20px;
+            height: 20px;
+        }
+
+       /* Main Content */
+       .content {
+        padding: 180px 20px 40px;
+        text-align: center;
+        animation: fadeIn 1s ease forwards;
+    }
+
+    .content h2 {
+        color: #00ff88;
+        font-size: 2rem;
+        font-family: 'Aclonica', sans-serif;
+    }
+
+    /* Carousel */
+    .carousel-container {
+        max-width: 80%;
+        margin: 2rem auto;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-slide {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 1.5rem;
+    }
+
+    .carousel-slide .blog-post {
+        background-color: #333;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        min-width: 90%;
+        flex: 0 0 100%;
+        transition: transform 0.3s;
+        text-align: center;
+    }
+
+    .blog-post h2 {
+        color: #00ff88;
+        font-family: 'Aclonica', sans-serif;
+    }
+
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: #444;
+        border: none;
+        color: white;
+        padding: 1rem;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+        z-index: 1; /* Ensure buttons are above other content */
+    }
+
+    .carousel-btn:hover {
+        background-color: #007bff;
+    }
+
+    .carousel-btn.prev {
+        left: 20px;
+    }
+
+    .carousel-btn.next {
+        right: 20px;
+    }
+
+        /* Footer Styles */
+        footer {
+            background-color: rgba(41, 41, 51, 0.95);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">
+                <img src="./img/shield.webp" alt="Cybersec Pathway Logo">
+                <h1>Cybersec Pathway</h1>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="blogpage.html"class="active">Blog</a>
+                <a href="service.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content (this section can be replaced on each page) -->
+    <div class="content">
+        <h2>Cybersec Pathway Blog</h2>
+        <p>Stay updated with the latest news, tips, and tutorials in cybersecurity.</p>
+    </div>
+
+<!-- Blog Carousel -->
+<div class="carousel-container">
+    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+    <div class="carousel-slide">
+        <div class="blog-post">
+            <h2>Understanding Phishing Attacks</h2>
+            <p class="date">Posted on October 20, 2024</p>
+            <p>Phishing attacks are one of the most common forms of cyber threats...</p>
+        </div>
+        <div class="blog-post">
+            <h2>Top 5 Tools for Cybersecurity Enthusiasts</h2>
+            <p class="date">Posted on October 21, 2024</p>
+            <p>Explore these essential tools that can boost your cybersecurity skills...</p>
+        </div>
+        <div class="blog-post">
+            <h2>How to Stay Safe Online</h2>
+            <p class="date">Posted on October 22, 2024</p>
+            <p>Learn the best practices for ensuring your online safety and privacy...</p>
+        </div>
+    </div>
+    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Cybersec Pathway. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
